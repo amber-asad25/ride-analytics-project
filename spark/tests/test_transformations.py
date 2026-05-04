@@ -169,7 +169,8 @@ def test_check_nulls(spark):
     result = check_nulls(df, ["ride_id"])
     
     assert "ride_id" in result
-    assert result["ride_id"] > 0
+    assert result["ride_id"]["null_count"] == 1
+    assert result["ride_id"]["total_rows"] == 2
 
 
 # -------------------------

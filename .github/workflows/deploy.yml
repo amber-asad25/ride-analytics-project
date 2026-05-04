@@ -9,8 +9,6 @@ env:
   GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   GCS_BUCKET_NAME: ${{ secrets.GCS_BUCKET_NAME || 'ride-analytics-bucket' }}
   DATAPROC_CLUSTER_NAME: ${{ secrets.DATAPROC_CLUSTER_NAME || 'spark-dev-new' }}
-  # COMPOSER_ENVIRONMENT: ${{ secrets.COMPOSER_ENVIRONMENT || 'airflow-dev' }}
-  # COMPOSER_REGION: ${{ secrets.COMPOSER_REGION || 'us-central1' }}
   DATAPROC_REGION: ${{ secrets.DATAPROC_REGION || 'us-central1' }}
   CLOUD_RUN_SERVICE_NAME: ${{ secrets.CLOUD_RUN_SERVICE_NAME || 'ride-analytics-api' }}
   CLOUD_RUN_REGION: ${{ secrets.CLOUD_RUN_REGION || 'us-central1' }}
@@ -58,22 +56,6 @@ jobs:
           else
             echo "BigQuery connector JAR already exists"
           fi
-
-      # - name: Get Composer bucket and upload DAGs
-      #   run: |
-      #     echo "Getting Composer environment details..."
-      #     COMPOSER_BUCKET=$(gcloud composer environments describe ${{ env.COMPOSER_ENVIRONMENT }} \
-      #       --location ${{ env.COMPOSER_REGION }} \
-      #       --format="get(config.dagGcsPrefix)" 2>/dev/null || echo "")
-
-      #     if [ -z "$COMPOSER_BUCKET" ]; then
-      #       echo "Warning: Composer environment '${{ env.COMPOSER_ENVIRONMENT }}' not found."
-      #       echo "Skipping DAG upload. Please upload manually or ensure Composer is created."
-      #     else
-      #       echo "Uploading Airflow DAGs to $COMPOSER_BUCKET/dags/"
-      #       gsutil cp airflow/dags/*.py $COMPOSER_BUCKET/dags/
-      #       echo "Airflow DAGs uploaded successfully"
-      #     fi
 
       - name: Verify Dataproc cluster
         run: |
