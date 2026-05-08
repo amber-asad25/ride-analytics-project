@@ -190,7 +190,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 </p>
 
 <p align="center">
-  <img src="images/botResponse.jpeg" alt="Telegram bot daily analytics response" width="900"/>
+  <img src="images/botResponse.jpg" alt="Telegram bot daily analytics response" width="900"/>
 </p>
 
 <p align="center">
