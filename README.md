@@ -9,7 +9,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 ## 🏗️ Architecture Overview
 
 <p align="center">
-  <img src="images/architecture.jpeg" alt="Ride Analytics Architecture Diagram" width="900"/>
+  <img src="images/architecture.png" alt="Ride Analytics Architecture Diagram" width="900"/>
 </p>
 
 <p align="center">
