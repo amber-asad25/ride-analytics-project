@@ -201,22 +201,6 @@ A fully automated, production-grade data engineering pipeline for processing rid
 
 ---
 
-## 🛠️ Tech Stack
-
-| Component         | Technology                      | Purpose                                               |
-| ----------------- | ------------------------------- | ----------------------------------------------------- | --- |
-| **Orchestration** | Apache Airflow                  | Workflow scheduling and pipeline orchestration        |
-| **Processing**    | PySpark (Databricks / Dataproc) | Distributed data transformation and processing        |
-| **Storage**       | Google Cloud Storage (GCS)      | Data lake storage for Bronze and Silver layers        |
-| **Warehouse**     | BigQuery                        | Analytics and reporting layer (Gold layer)            |
-| **API**           | FastAPI + Cloud Run             | Scalable REST API for serving analytics data          |
-| **Automation**    | n8n + Telegram Bot              | Workflow automation and real-time notifications       |
-| **CI/CD**         | GitHub Actions                  | Automated testing, validation, and deployment         |
-| **Testing**       | pytest + PySpark Testing        | Unit and integration testing                          |
-| **Data Quality**  | Custom PySpark Validations      | Data quality validation and business rule enforcement |     |
-
----
-
 ## 📁 Project Structure
 
 ```
