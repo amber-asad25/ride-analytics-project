@@ -31,7 +31,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
   - Data quality issues for testing
 
 <p align="center">
-  <img src="docs/images/mockData.jpeg" alt=" " width="900"/>
+  <img src="images/mockData.jpeg" alt=" " width="900"/>
 </p>
 
 <p align="center">
@@ -50,7 +50,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 - **Format**: Preserve original format with metadata (timestamp, source)
 
 <p align="center">
-  <img src="docs/images/bronze.jpeg" alt="Bronze Layer - Data Ingestion in GCS" width="900"/>
+  <img src="images/bronze.jpeg" alt="Bronze Layer - Data Ingestion in GCS" width="900"/>
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 - **Action**: Fail pipeline if quality checks fail, send alerts
 
 <p align="center">
-  <img src="docs/images/qualityReport.jpeg" alt="Data quality validation report" width="900"/>
+  <img src="images/qualityReport.jpeg" alt="Data quality validation report" width="900"/>
 </p>
 
 <p align="center">
@@ -97,7 +97,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 - **Partitioning**: By date (year/month/day)
 
 <p align="center">
-  <img src="docs/images/silver.jpeg" alt="Silver layer processed dataset" width="900"/>
+  <img src="images/silver.jpeg" alt="Silver layer processed dataset" width="900"/>
 </p>
 
 <p align="center">
@@ -117,7 +117,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
   - `agg_revenue_metrics` - Revenue analytics by time and location
 
 <p align="center">
-  <img src="docs/images/gold.jpeg" alt="Gold layer aggregated dataset" width="900"/>
+  <img src="images/gold.jpeg" alt="Gold layer aggregated dataset" width="900"/>
 </p>
 
 <p align="center">
@@ -151,7 +151,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
   - Serves as the central interface for external systems and automation tools
 
 <p align="center">
-  <img src="docs/images/api.jpeg" alt="FastAPI driver analytics endpoint response" width="900"/>
+  <img src="images/api.jpeg" alt="FastAPI driver analytics endpoint response" width="900"/>
 </p>
 
 <p align="center">
@@ -182,7 +182,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
   - Configurable via environment variables and webhook triggers
 
 <p align="center">
-  <img src="docs/images/bot.jpeg" alt="n8n Telegram bot workflow pipeline" width="900"/>
+  <img src="images/bot.jpeg" alt="n8n Telegram bot workflow pipeline" width="900"/>
 </p>
 
 <p align="center">
@@ -190,7 +190,7 @@ A fully automated, production-grade data engineering pipeline for processing rid
 </p>
 
 <p align="center">
-  <img src="docs/images/botResponse.jpeg" alt="Telegram bot daily analytics response" width="900"/>
+  <img src="images/botResponse.jpeg" alt="Telegram bot daily analytics response" width="900"/>
 </p>
 
 <p align="center">
